@@ -1,0 +1,33 @@
+<svg id="organic-blob" width="400" height="350" background="red" xmlns="http://www.w3.org/2000/svg" filter="url(#goo)" fill="royalblue">
+  <defs>
+    <filter id="goo">
+      <!-- tympanus.net/codrops/creative-gooey-effects -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter> 
+     <pattern id="image" patternUnits="userSpaceOnUse" height="300" width="300">
+      <image x="0" y="0" height="300" width="300" ></image>
+    </pattern>   
+  </defs>
+
+ <g>
+  <circle r="150" cy="190" cx="160" fill="limegreen">
+    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 160 200" to="360 165 185" dur="1s" repeatCount="indefinite"/>
+   </circle>
+
+     <circle r="150" cy="190" cx="155" fill="cyan">
+    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 155 190" to="0 165 195" dur="1s" repeatCount="indefinite"/>
+   </circle>
+   <circle r="150" cy="190" cx="160" fill="hotpink">
+    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 160 190" to="360 165 195" dur="1s" repeatCount="indefinite"/>
+   </circle>
+
+   <circle r="150" cy="190" cx="160" fill="red">
+   </circle>
+   
+  
+
+ </g>
+</svg>
+
